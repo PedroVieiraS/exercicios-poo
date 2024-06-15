@@ -9,84 +9,68 @@ public class ListaApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ListaApplication.class, args);
-		Scanner scanner = new Scanner(System.in);
 
-		int num1;
-		int num2;
-		int soma;
+		Lista01 lista = new Lista01();
+		lista.ex01();
 
-		System.out.println("Bem vindo");
+		// public void ex02(){
+		// 	String nome;
+	
+		// 	System.out.println("Escreva seu nome");
+	
+		// 	nome = scanner.next();
+	
+		// 	System.out.println("Ola, " + nome);
+		// }
 
-		System.out.println("Digite um numero:");
+		// float conv = 5.25f;
+		// float resultconv;
+		// float valor;
 
-		num1 = scanner.nextInt();
+		// System.out.println("Digite quanto voce deseja converter");
 
-		System.out.println("Digite outro numero:");
+		// valor = scanner.nextFloat();
 
-		num2 = scanner.nextInt();
+		// resultconv = valor * conv;
 
-		soma = num1 + num2;
+		// System.out.println("O resultado e " +  resultconv);
 
-		System.out.println("O resultado da soma e: "+soma);
+		// float largura;
+		// float comprimento;
+		// float valorDoMetro;
+		// float area;
+		// float valorTerreno;
 
-		String nome;
-
-		System.out.println("Escreva seu nome");
-
-		nome = scanner.next();
-
-		System.out.println("Ola, " + nome);
-
-		float conv = 5.25f;
-		float resultconv;
-		float valor;
-
-		System.out.println("Digite quanto voce deseja converter");
-
-		valor = scanner.nextFloat();
-
-		resultconv = valor * conv;
-
-		System.out.println("O resultado e " +  resultconv);
-
-		float largura;
-		float comprimento;
-		float valorDoMetro;
-		float area;
-		float valorTerreno;
-
-		System.out.println("Qual e a largura: ");
-		largura = scanner.nextFloat();
+		// System.out.println("Qual e a largura: ");
+		// largura = scanner.nextFloat();
 		
-		System.out.println("Qual e o comprimento: ");
-		comprimento = scanner.nextFloat();
+		// System.out.println("Qual e o comprimento: ");
+		// comprimento = scanner.nextFloat();
 
-		System.out.println("Qual o valor por metro quadrado: ");
-		valorDoMetro = scanner.nextFloat();
-
-
-		area = largura * comprimento;
-
-		valorTerreno = area * valorDoMetro;
-
-		System.out.println("O valor e: " + valorTerreno);
-
-		float km, litro, calc; 
-
-		System.out.println("informe quantos km:");
-
-		km = scanner.nextFloat();
-
-		System.out.println("informe quantos litros vc gastou: ");
-
-		litro = scanner.nextFloat();
-
-		calc = km/litro;
-
-		System.out.println("o resultado e: "+ calc);
+		// System.out.println("Qual o valor por metro quadrado: ");
+		// valorDoMetro = scanner.nextFloat();
 
 
-		scanner.close();
+		// area = largura * comprimento;
+
+		// valorTerreno = area * valorDoMetro;
+
+		// System.out.println("O valor e: " + valorTerreno);
+
+		// float km, litro, calc; 
+
+		// System.out.println("informe quantos km:");
+
+		// km = scanner.nextFloat();
+
+		// System.out.println("informe quantos litros vc gastou: ");
+
+		// litro = scanner.nextFloat();
+
+		// calc = km/litro;
+
+		// System.out.println("o resultado e: "+ calc);
+
 		
 
 
