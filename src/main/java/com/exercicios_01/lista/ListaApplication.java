@@ -12,11 +12,14 @@ public class ListaApplication {
 
 		Lista01 lista = new Lista01();
 		
-		// lista.ex01();
-		// lista.ex02();
-		//lista.ex03();
-		//lista.ex04();
+		lista.ex01();
+		lista.ex02();
+		lista.ex03();
+		lista.ex04();
 		lista.ex05();
+		lista.ex06();
+		lista.ex07();
+		lista.ex08();
 
 	}
 

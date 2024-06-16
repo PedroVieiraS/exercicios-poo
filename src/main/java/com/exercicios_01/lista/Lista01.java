@@ -13,7 +13,7 @@ public class Lista01 {
         
         num1 = scanner.nextInt();
     
-        System.out.println("Digite um numero: ");
+        System.out.println("Digite outro numero: ");
 
         num2 = scanner.nextInt();
 
@@ -42,12 +42,25 @@ public class Lista01 {
 
 		valor = scanner.nextFloat();
 
-		resultconv = valor * conv;
+		resultconv = valor / conv;
 
 		System.out.println("Esse e o resultado em dolar: " +  resultconv);
     }
 
     public void ex04(){
+        float numeroleia;
+
+        System.out.println("Escreva um numero:");
+
+        numeroleia = scanner.nextFloat();
+
+        float antecessor = numeroleia - 1;
+        float sucessor = numeroleia + 1;
+
+        System.out.println("O antecessor e: "+ (antecessor)  +"O Sucessor e: "+ sucessor);
+    }
+
+    public void ex05(){
         float largura;
 		float comprimento;
 		float valorDoMetro;
@@ -71,7 +84,7 @@ public class Lista01 {
 		System.out.println("O valor e: " + valorTerreno);
     }
 
-    public void ex05(){
+    public void ex06(){
         float km, litro, calc; 
 
 		System.out.println("informe quantos km:");
@@ -85,6 +98,43 @@ public class Lista01 {
 		calc = km/litro;
 
 		System.out.println("o resultado e: "+ calc);
+    }
+
+    public void ex07(){
+        float nota1;
+        float nota2;
+        float nota3;
+        float nota4;
+        float media;
+
+        System.out.println("Digite a sua primera nota: ");
+        nota1 = scanner.nextFloat();
+
+        System.out.println("Digite a sua segunda nota: ");
+        nota2 = scanner.nextFloat();
+
+        System.out.println("Digite a sua terceira nota: ");
+        nota3 = scanner.nextFloat();
+
+        System.out.println("Digite a sua quarta nota: ");
+        nota4 = scanner.nextFloat();
+
+        media = (nota1+nota2+nota3+nota4)/4;
+
+        System.out.println("A sua media final e: " + media);
+    }
+
+    public void ex08(){
+        float temperatura;
+        double converter;
+
+        System.out.println("informe a temperatura em Fahrenheit: ");
+
+        temperatura = scanner.nextFloat();
+
+        converter = (temperatura - 32) / 1.8;
+
+        System.out.println(converter);
     }
 
 }
