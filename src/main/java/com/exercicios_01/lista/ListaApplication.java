@@ -15,28 +15,8 @@ public class ListaApplication {
 		// lista.ex01();
 		// lista.ex02();
 		//lista.ex03();
-		lista.ex04();
-
-		
-		
-
-		// float km, litro, calc; 
-
-		// System.out.println("informe quantos km:");
-
-		// km = scanner.nextFloat();
-
-		// System.out.println("informe quantos litros vc gastou: ");
-
-		// litro = scanner.nextFloat();
-
-		// calc = km/litro;
-
-		// System.out.println("o resultado e: "+ calc);
-
-		
-
-
+		//lista.ex04();
+		lista.ex05();
 
 	}
 

@@ -71,4 +71,20 @@ public class Lista01 {
 		System.out.println("O valor e: " + valorTerreno);
     }
 
+    public void ex05(){
+        float km, litro, calc; 
+
+		System.out.println("informe quantos km:");
+
+		km = scanner.nextFloat();
+
+		System.out.println("informe quantos litros vc gastou: ");
+
+		litro = scanner.nextFloat();
+
+		calc = km/litro;
+
+		System.out.println("o resultado e: "+ calc);
+    }
+
 }
