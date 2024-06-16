@@ -14,29 +14,10 @@ public class ListaApplication {
 		
 		// lista.ex01();
 		// lista.ex02();
-		lista.ex03();
+		//lista.ex03();
+		lista.ex04();
 
-		// float largura;
-		// float comprimento;
-		// float valorDoMetro;
-		// float area;
-		// float valorTerreno;
-
-		// System.out.println("Qual e a largura: ");
-		// largura = scanner.nextFloat();
 		
-		// System.out.println("Qual e o comprimento: ");
-		// comprimento = scanner.nextFloat();
-
-		// System.out.println("Qual o valor por metro quadrado: ");
-		// valorDoMetro = scanner.nextFloat();
-
-
-		// area = largura * comprimento;
-
-		// valorTerreno = area * valorDoMetro;
-
-		// System.out.println("O valor e: " + valorTerreno);
 		
 
 		// float km, litro, calc; 
