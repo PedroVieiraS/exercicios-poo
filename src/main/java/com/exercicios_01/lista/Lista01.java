@@ -38,13 +38,13 @@ public class Lista01 {
 		float resultconv;
 		float valor;
 
-		System.out.println("Digite quanto voce deseja converter");
+		System.out.println("Digite quanto voce tem em reais");
 
 		valor = scanner.nextFloat();
 
 		resultconv = valor * conv;
 
-		System.out.println("O resultado e " +  resultconv);
+		System.out.println("Esse e o resultado em dolar: " +  resultconv);
     }
 
     public void ex04(){
