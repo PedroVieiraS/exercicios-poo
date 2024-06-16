@@ -32,4 +32,19 @@ public class Lista01 {
 	
 		System.out.println("Ola, " + nome);
 	}
+
+    public void ex03(){
+        float conv = 5.25f;
+		float resultconv;
+		float valor;
+
+		System.out.println("Digite quanto voce deseja converter");
+
+		valor = scanner.nextFloat();
+
+		resultconv = valor * conv;
+
+		System.out.println("O resultado e " +  resultconv);
+    }
+    
 }

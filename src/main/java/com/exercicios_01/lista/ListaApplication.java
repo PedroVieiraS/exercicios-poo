@@ -12,21 +12,9 @@ public class ListaApplication {
 
 		Lista01 lista = new Lista01();
 		
-		lista.ex01();
-		lista.ex02();
-
-		
-		// float conv = 5.25f;
-		// float resultconv;
-		// float valor;
-
-		// System.out.println("Digite quanto voce deseja converter");
-
-		// valor = scanner.nextFloat();
-
-		// resultconv = valor * conv;
-
-		// System.out.println("O resultado e " +  resultconv);
+		// lista.ex01();
+		// lista.ex02();
+		lista.ex03();
 
 		// float largura;
 		// float comprimento;
@@ -49,6 +37,7 @@ public class ListaApplication {
 		// valorTerreno = area * valorDoMetro;
 
 		// System.out.println("O valor e: " + valorTerreno);
+		
 
 		// float km, litro, calc; 
 
