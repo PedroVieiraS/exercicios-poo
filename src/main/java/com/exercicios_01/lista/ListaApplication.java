@@ -11,18 +11,11 @@ public class ListaApplication {
 		SpringApplication.run(ListaApplication.class, args);
 
 		Lista01 lista = new Lista01();
+		
 		lista.ex01();
+		lista.ex02();
 
-		// public void ex02(){
-		// 	String nome;
-	
-		// 	System.out.println("Escreva seu nome");
-	
-		// 	nome = scanner.next();
-	
-		// 	System.out.println("Ola, " + nome);
-		// }
-
+		
 		// float conv = 5.25f;
 		// float resultconv;
 		// float valor;
