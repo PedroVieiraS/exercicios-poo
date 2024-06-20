@@ -29,7 +29,7 @@ public class ListaApplication {
 		Lista2 lista2 = new Lista2();
 		
 		LimpaTerminal.limpa_windows();
-		lista2.ex07();
+		lista2.ex08();
 
 
 		//lista.ex02();

@@ -160,5 +160,90 @@ public class Lista2 {
             System.out.println("Nao Divisivel");
         }
     }
+
+    public void ex08(){
+
+        String[][] perguntas = {
+            {
+                "Quanto é 2 + 2?",
+                "A) 3",
+                "B) 4",
+                "C) 5",
+                "D) 6",
+                "B" 
+            },
+            {
+                "Quanto é 5 * 6?",
+                "A) 30",
+                "B) 35",
+                "C) 40",
+                "D) 45",
+                "A" 
+            },
+            {
+                "Quanto é 9 - 3?",
+                "A) 6",
+                "B) 7",
+                "C) 8",
+                "D) 9",
+                "A" 
+            },
+            {
+                "Quanto é 15 / 3?",
+                "A) 3",
+                "B) 4",
+                "C) 5",
+                "D) 6",
+                "C" 
+            },
+            {
+                "Quanto é 7 + 8?",
+                "A) 14",
+                "B) 15",
+                "C) 16",
+                "D) 17",
+                "B" 
+            }
+        };
+
+        int erros = 0;
+        int acertos = 0;
+
+        for (String[] pergunta : perguntas) {
+
+            System.out.println(pergunta[0]);
+
+            for (int i = 1; i <= 4; i++) {
+                System.out.println(pergunta[i]);
+            }
+
+            System.out.print("Digite a sua resposta: ");
+            String resposta = scanner.nextLine().toUpperCase();
+
+            if (resposta.equals(pergunta[5])) {
+                acertos++;
+                System.out.println("Resposta correta!");
+            } else {
+                erros++;
+                System.out.println("Resposta errada!");
+            }
+
+            if (erros == 3) {
+                System.out.println("Você errou 3 vezes. Você perdeu o jogo.");
+                
+                if(acertos > 1){
+                    System.out.println("Número de acertos: " + acertos);
+                }
+
+                break;
+            }
+        }
+
+        if (erros < 3) {
+            System.out.println("Você chegou ao final do jogo.");
+        }
+        System.out.println("Número de acertos: " + acertos);
+        
+    }
     
 }
