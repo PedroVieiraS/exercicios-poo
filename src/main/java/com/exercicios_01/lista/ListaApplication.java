@@ -26,7 +26,7 @@ public class ListaApplication {
 		SpringApplication.run(ListaApplication.class, args);
 
 		Lista01 lista = new Lista01();
-		Lista2 lista2 = new Lista2();
+		Lista02 lista2 = new Lista02();
 		
 		LimpaTerminal.limpa_windows();
 		lista2.ex08();

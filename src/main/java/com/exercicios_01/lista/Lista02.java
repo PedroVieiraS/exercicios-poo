@@ -2,7 +2,7 @@ package com.exercicios_01.lista;
 
 import java.util.Scanner;
 
-public class Lista2 {
+public class Lista02 {
     Scanner scanner = new Scanner(System.in);
 
     public void ex01(){
@@ -243,7 +243,7 @@ public class Lista2 {
             System.out.println("Você chegou ao final do jogo.");
         }
         System.out.println("Número de acertos: " + acertos);
-        
+
     }
     
 }
