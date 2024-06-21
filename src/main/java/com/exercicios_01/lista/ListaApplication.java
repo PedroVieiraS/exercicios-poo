@@ -28,9 +28,10 @@ public class ListaApplication {
 		Lista01 lista = new Lista01();
 		Lista02 lista2 = new Lista02();
 		Lista03 lista3 = new Lista03();
+		Lista04 lista4 = new Lista04();
 
 		LimpaTerminal.limpa_windows();
-		lista3.ex03();
+		lista3.ex01();
 
 	}
 

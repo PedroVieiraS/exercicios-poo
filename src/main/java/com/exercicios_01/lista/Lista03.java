@@ -6,8 +6,6 @@ public class Lista03 {
     Scanner scanner = new Scanner(System.in);
 
     public void ex01(){
-        Timer timer = new Timer();
-
         int tempo;
         boolean certo = true;
 
@@ -25,9 +23,16 @@ public class Lista03 {
 
 
         for (int i = tempo; i > 0; i--) {
+            try {
+                System.out.println(i);
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
             
-            System.out.println(i);
         }
+        System.out.println("acabou");
     }
 
     public void ex02(){
@@ -69,4 +74,6 @@ public class Lista03 {
             
         }
     }
+
+    
 }
