@@ -15,7 +15,7 @@ public class Lista03 {
             System.out.println("digite um valor entre 1 e 59:");
             tempo = scanner.nextInt();
     
-            if (tempo > 0 && tempo <= 59){
+            if (tempo >= 1 && tempo <= 59){
                 certo = false;
             }else {
                 System.out.println("Valor invalido");
@@ -42,27 +42,31 @@ public class Lista03 {
     }
 
     public void ex03(){
-        // int num1, num2, numMaior, numMenor;
+        int num1, num2, numMaior = 0, numMenor = 0;
 
-        // System.out.println("digite o primeiro numero:");
-        // num1 = scanner.nextInt();
+        System.out.println("digite o primeiro numero:");
+        num1 = scanner.nextInt();
 
-        // System.out.println("digite o segundo numero:");
-        // num2 = scanner.nextInt();
+        System.out.println("digite o segundo numero:");
+        num2 = scanner.nextInt();
 
-        // if (num1 > num2) {
-        //     num1 = numMaior;
-        //     num2 = numMenor;
-        // }else if (num1 == num2){
+        if (num1 > num2) {
+            numMaior = num1;
+            numMenor = num2;
+        }else if (num1 == num2){
+            System.out.println("os numeros sao iguais");
+        }else{
+            numMaior = num2;
+            numMenor = num1;
+        }
+        
+        System.out.println("Esses são os numeros pares entre " + numMenor + " e " + numMaior);
 
-        // }
-
-        // for (int i = num1; i < num2; i++) {
-
-        //     if (i % 2 == 0) {
-        //         System.out.println(i);
-        //     }
+        for (int i = numMenor; i < numMaior; i++) {
+            if (i % 2 == 0) {
+                System.out.println(i);
+            }
             
-        // }
+        }
     }
 }
