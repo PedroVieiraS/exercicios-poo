@@ -66,13 +66,15 @@ public class Lista04 {
         System.out.println("a quantidade de numeros pares e: " + quantidade);
     }
 
-    public void lista() {
+    public void ex05() {
         String nome;
-        int i = 0;
+        int indice, valor;
+        
         boolean menu = true;
         int opcao;
 
         ArrayList<String> listaDeCompras = new ArrayList<>();
+        ArrayList<Integer> valorDasCompras = new ArrayList<>();
 
         while (menu) {
 
@@ -87,12 +89,51 @@ public class Lista04 {
             opcao = scanner.nextInt();
 
             if (opcao == 1) {
-                System.out.println("EScreva um item");
+                System.out.println("digite aonde esse item vai entrar");
+                indice = scanner.nextInt();
+
+
+                System.out.println("Ecreva um item");
                 nome = scanner.next();
-                listaDeCompras.add(nome);
-                i++;
-            } else if (opcao == 4) {
-                System.out.println(listaDeCompras);
+                listaDeCompras.add(indice, nome);
+
+                System.out.println("digite o valor deste item");
+                valor = scanner.nextInt();
+                valorDasCompras.add(indice, valor);
+
+
+            }else if (opcao == 2) {
+                System.out.println("aonde o indice aonde seu item se encontra");
+                indice = scanner.nextInt();
+
+                if(indice >= 0 && indice < listaDeCompras.size()){
+                    String elemento = listaDeCompras.get(indice);
+
+                    if(elemento != null){
+                        String resposta;
+                        System.out.println("deseja remover: "+ elemento);
+                        resposta = scanner.next();
+
+                        if (resposta.equalsIgnoreCase("s")) {
+                            listaDeCompras.remove(indice);
+                            valorDasCompras.remove(indice);
+                            
+                            System.out.println("item removido");
+                            System.out.println(listaDeCompras);
+                        }else{
+                            System.out.println("item nao foi removido");
+                        }
+                    }
+                }
+
+            }else if (opcao == 3) {
+                
+            }else if (opcao == 4) {
+                for (int i = 0; i < listaDeCompras.size(); i++) {
+                    System.out.println(listaDeCompras.get(i));
+                    System.out.println(valorDasCompras.get(i));
+                }
+                
             } else if (opcao == 5) {
                 menu = false;
             } else {
