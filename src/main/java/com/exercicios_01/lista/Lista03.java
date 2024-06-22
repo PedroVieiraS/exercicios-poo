@@ -75,5 +75,35 @@ public class Lista03 {
         }
     }
 
+    public void ex04(){
+        Random randon = new Random();
+
+        int numeroUsuario, numeroRandom, acertar = 1;
+
+        numeroRandom = randon.nextInt(10);
+
+        while(acertar == 1){
+            System.out.println("Digite um numero entre 0 e 9");
+            numeroUsuario = scanner.nextInt();
+
+            if (numeroRandom == numeroUsuario) {
+                System.out.println("acertou");
+                System.out.println("O numero random era: " + numeroRandom);
+                acertar = 0;
+            }else if (numeroRandom > numeroUsuario) {
+                System.out.println("o numero e maior");
+            } else if(numeroRandom < numeroUsuario){
+                System.out.println("o numero e menor");
+            } else{
+                System.out.println("digite um numero valido");
+            }
+            
+        }
+
+
+        
+
+    }
+
     
 }

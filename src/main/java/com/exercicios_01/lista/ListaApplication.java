@@ -31,8 +31,10 @@ public class ListaApplication {
 		Lista04 lista4 = new Lista04();
 
 		LimpaTerminal.limpa_windows();
-		lista3.ex01();
+		lista3.ex04();
 
 	}
+
+
 
 }
