@@ -100,9 +100,38 @@ public class Lista03 {
             
         }
 
+    }
 
-        
+    public void ex05(){
+        int tentativas = 0;
+        boolean logado = false;
+        String  usuario, senha, usuarioVerificado = "pedro", senhaVerificado = "1234";
 
+        while (tentativas < 3 && logado == false) {
+            tentativas++;
+            System.out.println("Digite seu  usuario");
+             usuario = scanner.next();
+            System.out.println("Digite sua senha");
+            senha = scanner.next();
+
+            if(usuario.equals(usuarioVerificado) && senha.equals(senhaVerificado)){
+                System.out.println("Bem vindo "+ usuario);
+                logado = true;
+            }else{
+                if (!(senha.equals(senhaVerificado)) &&  !(usuario.equals(usuarioVerificado))) {
+                    System.out.println("Login e senha errados"); 
+                 }else if (!(senha.equals(senhaVerificado))){
+                     System.out.println("senha errada");
+                 }else{
+                     System.out.println(" usuario errado");
+                 }
+                
+            }
+        }
+
+        if (tentativas > 3) {
+            System.out.println("voce tentou mais de 3 vezes");
+        }
     }
 
     
