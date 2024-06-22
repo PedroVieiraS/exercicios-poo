@@ -134,5 +134,23 @@ public class Lista03 {
         }
     }
 
+    public void ex06(){
+        int andares;
+
+        System.out.println("digite quantos andares: ");
+        andares = scanner.nextInt();
+
+        for (int i = 0; i < andares; i++) {
+            for (int k = andares - i; k > 1; k--) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j <= i*2; j++) {
+                System.out.print("*");
+            }
+            System.out.println(" ");
+        }
+
+    }
+
     
 }
