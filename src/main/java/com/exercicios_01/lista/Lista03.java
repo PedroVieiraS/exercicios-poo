@@ -152,5 +152,22 @@ public class Lista03 {
 
     }
 
+    public void ex07(){
+        int largura, altura;
+
+        System.out.println("digite a altura");
+        altura = scanner.nextInt();
+
+        System.out.println("digite a largura");
+        largura = scanner.nextInt();
+
+        for (int i = 0; i < altura; i++) {
+            for (int j = 0; j < largura; j++) {
+                System.out.print("*");
+            }
+            System.out.println(" ");
+        }
+    }
+
     
 }
